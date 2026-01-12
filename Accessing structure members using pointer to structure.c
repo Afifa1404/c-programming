@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+struct Student
+{
+    int id;
+    char name[20];
+};
+int main()
+{
+    struct Student s={101,"Afifa"};
+    struct Student*ptr=&s;
+    printf("ID:%d\n",ptr->id);
+    printf("Name:%s\n",ptr->name);
+    return 0;
+}
